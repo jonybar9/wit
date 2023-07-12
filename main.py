@@ -18,8 +18,8 @@ class WitInterface:
 print("Why?")
 
 if __name__ == "__main__":
-    print("What?")
-    # TODO: handle edge cases
+    if len(sys.argv) == 1:
+        raise ValueError("Oopsie no command")
     command = sys.argv[1]
     args = sys.argv[2:]
     WitInterface.handle_commands(command, args)

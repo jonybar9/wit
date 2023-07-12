@@ -3,7 +3,7 @@ import fileHandler
 import secrets
 import commit
 
-7
+
 class Wit:
 
     @staticmethod
